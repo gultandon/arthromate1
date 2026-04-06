@@ -18,11 +18,11 @@ ArthroMate is a mobile companion for arthritis patients that helps them log dail
 │  Mobile  │────▶│  API Gateway   │────▶│ Lambda   │────▶│ RDS MySQL │
 │  Client  │     │  (REST + JWT)  │     │ (Python) │     │ (VPC)     │
 └──────────┘     └──────┬─────────┘     └────┬─────┘     └───────────┘
-                        │                     │
-                   ┌────▼────┐           ┌────▼─────────┐
-                   │ Cognito │           │CloudWatch    │
-                   │ (Auth)  │           │(Logs+Metrics)│
-                   └─────────┘           └──────────────┘
+                        │                    │
+                   ┌────▼────┐          ┌────▼─────────┐
+                   │ Cognito │          │CloudWatch    │
+                   │ (Auth)  │          │(Logs+Metrics)│
+                   └─────────┘          └──────────────┘
 ```
 
 | Layer | Technology | Description |
